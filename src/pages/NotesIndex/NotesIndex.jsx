@@ -32,9 +32,6 @@ export default function NotesIndex({ notes, setNotes }) {
                 {notes && notes.map((note, index) => (
                     <NoteCard key={index} note={note} />
                 ))}
-                {notes && notes.map((note, index) => (
-                    <NoteCard key={index} note={note} />
-                ))}
             </div>
         </>
     );
