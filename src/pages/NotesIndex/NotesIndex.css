@@ -1,0 +1,9 @@
+.NotesList {
+    display: flex;
+    justify-content: center;
+}
+
+.NoteForm {
+    display: flex;
+    justify-content: center;
+}
