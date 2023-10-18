@@ -13,10 +13,9 @@ export default function NotesIndex({ notes, setNotes }) {
     async function handleSubmit(evt) {
         evt.preventDefault();
         try {
-            const note = await createNote(inputData);
-            setNotes([...notes, note]);
+            const allNotes = await createNote(inputData);
+            setNotes([...notes, ...allNotes]);
         } catch (err) {
-            // Error Handler
             throw new Error(err.message);
         }
         setInputData({ text: "" });
